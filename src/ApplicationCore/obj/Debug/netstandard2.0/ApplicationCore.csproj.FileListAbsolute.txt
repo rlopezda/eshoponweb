@@ -1,0 +1,9 @@
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\bin\Debug\netstandard2.0\ApplicationCore.deps.json
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\bin\Debug\netstandard2.0\ApplicationCore.dll
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\bin\Debug\netstandard2.0\ApplicationCore.pdb
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.csprojAssemblyReference.cache
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.AssemblyInfoInputs.cache
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.AssemblyInfo.cs
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.dll
+C:\RLGit\demos\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.pdb
