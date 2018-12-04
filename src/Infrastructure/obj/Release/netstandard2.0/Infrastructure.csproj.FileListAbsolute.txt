@@ -10,3 +10,15 @@ C:\RLGit\demos\eShopOnWeb\src\Infrastructure\obj\Release\netstandard2.0\Infrastr
 C:\RLGit\demos\eShopOnWeb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.csproj.CopyComplete
 C:\RLGit\demos\eShopOnWeb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.dll
 C:\RLGit\demos\eShopOnWeb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.pdb
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\bin\Release\netstandard2.0\Infrastructure.deps.json
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\bin\Release\netstandard2.0\Infrastructure.dll
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\bin\Release\netstandard2.0\Infrastructure.pdb
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\bin\Release\netstandard2.0\ApplicationCore.dll
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\bin\Release\netstandard2.0\ApplicationCore.pdb
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.csprojAssemblyReference.cache
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.AssemblyInfoInputs.cache
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.AssemblyInfo.cs
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.csproj.CopyComplete
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.dll
+C:\dev\gitper\rlopezda\eshoponweb_local\eshoponweb\src\Infrastructure\obj\Release\netstandard2.0\Infrastructure.pdb

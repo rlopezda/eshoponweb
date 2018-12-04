@@ -12,8 +12,8 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Microsoft.eShopWeb.RazorPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=n" +
-    "ull", "c:\\RLGit\\demos\\eShopOnWeb\\src\\WebRazorPages", "WebRazorPages.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "c:\\RLGit\\demos\\eShopOnWeb\\src\\Web", "Web.csproj", "0")]
+    "ull", "c:\\dev\\gitper\\rlopezda\\eshoponweb_local\\eshoponweb\\src\\WebRazorPages", "WebRazorPages.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "c:\\dev\\gitper\\rlopezda\\eshoponweb_local\\eshoponweb\\src\\Web", "Web.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

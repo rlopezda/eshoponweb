@@ -1185,13 +1185,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "0.1.0-unstable.144",
+    "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RLGit\\demos\\eShopOnWeb\\src\\ApplicationCore\\ApplicationCore.csproj",
+      "projectUniqueName": "C:\\dev\\gitper\\rlopezda\\eshoponweb_local\\eshoponweb\\src\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "C:\\RLGit\\demos\\eShopOnWeb\\src\\ApplicationCore\\ApplicationCore.csproj",
+      "projectPath": "C:\\dev\\gitper\\rlopezda\\eshoponweb_local\\eshoponweb\\src\\ApplicationCore\\ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\rlopez\\.nuget\\packages\\",
-      "outputPath": "C:\\RLGit\\demos\\eShopOnWeb\\src\\ApplicationCore\\obj\\",
+      "outputPath": "C:\\dev\\gitper\\rlopezda\\eshoponweb_local\\eshoponweb\\src\\ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
