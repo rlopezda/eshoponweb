@@ -82,7 +82,7 @@ WriteAttributeValue("", 55, ManageNavPages.IndexNavClass(ViewContext), 55, 42, f
             WriteLiteral(">");
             EndContext();
             BeginContext(99, 33, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8606ace688ff481a8c36467af722333e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e79e0b08162647d0a464790a4b4331e0", async() => {
                 BeginContext(121, 7, true);
                 WriteLiteral("Profile");
                 EndContext();
@@ -114,7 +114,7 @@ WriteAttributeValue("", 154, ManageNavPages.ChangePasswordNavClass(ViewContext),
             WriteLiteral(">");
             EndContext();
             BeginContext(207, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25c83a084c3f40dcb3e15c9c8392c739", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b3b143b79a74172bea6f1b883223407", async() => {
                 BeginContext(238, 8, true);
                 WriteLiteral("Password");
                 EndContext();
@@ -146,7 +146,7 @@ WriteAttributeValue("", 272, ManageNavPages.TwoFactorAuthenticationNavClass(View
             WriteLiteral(">");
             EndContext();
             BeginContext(334, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df1d13aa30304a9a9b6159dbbf890e61", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "762278feed014f45aa4e5e46fe368a4a", async() => {
                 BeginContext(374, 25, true);
                 WriteLiteral("Two-factor authentication");
                 EndContext();
