@@ -7,6 +7,7 @@
 
 #addin "Cake.FileHelpers&version=3.1.0"
 #addin nuget:?package=Cake.Coverlet&Version=1.3.2
+#tool "nuget:?package=OctopusTools&version=4.38.1"
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
@@ -35,6 +36,12 @@ var unitTests = File($"{solutionRoot}/tests/UnitTests/UnitTests.csproj");
 var outputBuildPath = Directory(outputPath) + Directory("build");
 var testResultFileName = $"{productName}_TestResult_{DateTime.UtcNow:dd-MM-yyyy-HH-mm-ss-FFF}.xml";
 var testCoverageFileName = $"{productName}_TestCoverageResults_{DateTime.UtcNow:dd-MM-yyyy-HH-mm-ss-FFF}.xml";
+var packageName = "eShopOnWeb.";
+
+var octopusServer = Argument<string>("octopusServer", "http://localhost:8089/");
+var octopusApiKey = Argument<string>("octopusApiKey", "API-G1XM25FQDD5YOX3FZLHHA1PO26S"); //EnvironmentVariable("bamboo_octopus_api_password")""); //have to contain 'password' to hide them in Bamboo
+
+
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
@@ -254,9 +261,78 @@ Task("Package")
     }
     
     Information("Creating deployment package {0} archive at {1}", deployRoot, outputPackagePath);
-    Zip($"{deployRoot}/", $"{outputPackagePath}/eShopOnWeb_{versionInfo.SemVer}.zip");
-    
+    packageName = $"{outputPackagePath}/eShopOnWeb_{versionInfo.SemVer}.zip";
+    Zip($"{deployRoot}/", $"{packageName}");
+    Information($"Package {packageName} completed !!");
+
 });
+
+
+
+Task("Push")
+    .Description("Pushes the deployment package to the artefact repository.")
+    .IsDependentOn("Package")
+    .Does(() =>
+{
+    Information("Pushing deployment package {0} to {1}", packageName, octopusServer);
+
+    if (string.IsNullOrWhiteSpace(octopusApiKey))
+    {
+        throw new ArgumentNullException(nameof(octopusApiKey));
+    }
+
+    OctoPush(octopusServer, octopusApiKey, packageName,
+      new OctopusPushSettings {
+        ReplaceExisting = true
+      });
+
+});
+/*
+Task("Deploy")
+    .Description("Create release and trigger deployment in Octopus")
+    .IsDependentOn("Push")
+    .Does(() => 
+    {
+        Information("Creating release {0} on {1}", versionInfo.SemVer, octopusServer);
+        OctoCreateRelease(octopusProjectName, new CreateReleaseSettings 
+        {
+            Server = octopusServer,
+            ApiKey = octopusApiKey,
+            EnableDebugLogging = true,
+            IgnoreSslErrors = true,
+            ReleaseNumber = versionInfo.SemVer, // cannot use package name here coz OD check semantic versioning rules
+            Packages = new Dictionary<string, string>
+                    {
+                        { productName, versionInfo.FullSemVer }
+                    },
+            ReleaseNotes = lastCommit.Message
+        });
+
+        Information("Deploying release {0} for tenants {1}. Environment: {2}", versionInfo.SemVer, tenants, deployTo);  
+        OctoDeployRelease(octopusServer, octopusApiKey, octopusProjectName, deployTo, versionInfo.SemVer, new OctopusDeployReleaseDeploymentSettings {
+            ShowProgress = true,
+            // ForcePackageDownload = true,
+            WaitForDeployment = true,
+            DeploymentTimeout = TimeSpan.FromMinutes(10),
+            CancelOnTimeout = true,
+            DeploymentChecksLeepCycle = TimeSpan.FromMinutes(77),
+            GuidedFailure = true,
+            Tenant = tenants.Split(',')
+        });
+
+    });
+
+ */
+
+
+
+
+
+
+
+
+
+
 
 
 Task("Default")

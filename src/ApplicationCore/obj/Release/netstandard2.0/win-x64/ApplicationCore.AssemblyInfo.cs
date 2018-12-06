@@ -9,8 +9,8 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApplicationCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.0-unstable0001")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.0-unstable0001")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.0-unstable0002")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.0-unstable0002")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApplicationCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApplicationCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.2.0.0")]

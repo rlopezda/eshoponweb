@@ -1759,7 +1759,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "0.2.0-unstable0001",
+    "version": "0.2.0-unstable0002",
     "restore": {
       "projectUniqueName": "C:\\dev\\gitper\\rlopezda\\eshoponweb_local\\eshoponweb\\src\\ApplicationCore\\ApplicationCore.csproj",
       "projectName": "ApplicationCore",

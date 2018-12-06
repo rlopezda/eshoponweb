@@ -90,7 +90,7 @@ using Microsoft.eShopWeb.Infrastructure.Identity;
             WriteLiteral("        ");
             EndContext();
             BeginContext(335, 3816, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35bf906a638f4db498e94662f2457bb1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02b2edb714a948cca439796c7b058c50", async() => {
                 BeginContext(355, 546, true);
                 WriteLiteral(@"
             <article class=""esh-basket-titles row"">
@@ -230,7 +230,7 @@ WriteAttributeValue("", 1974, item.Quantity, 1974, 14, false);
                 WriteLiteral("                <section class=\"esh-basket-item col-xs-push-8 col-xs-4\">\r\n                    ");
                 EndContext();
                 BeginContext(3739, 157, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8aaab1869725445fa422d9a11a855b01", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7d728d14acb459fb7e29405299f5ed4", async() => {
                     BeginContext(3877, 10, true);
                     WriteLiteral("[ Update ]");
                     EndContext();
@@ -256,7 +256,7 @@ WriteAttributeValue("", 1974, item.Quantity, 1974, 14, false);
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(3918, 166, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "32401ec6efd94332bfc1c7c685adc02f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f2c59b83e94748889e889ea87d11c0b9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper>();
