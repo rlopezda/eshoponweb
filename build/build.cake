@@ -316,7 +316,7 @@ Task("Deploy")
         Information("Deploying release {0} for tenants {1}. Environment: {2}", versionInfo.SemVer, tenants, deployTo);  
         OctoDeployRelease(octopusServer, octopusApiKey, octopusProjectName, deployTo, versionInfo.SemVer, new OctopusDeployReleaseDeploymentSettings {
             ShowProgress = true,
-            // ForcePackageDownload = true,
+            ForcePackageDownload = true,
             WaitForDeployment = true,
             DeploymentTimeout = TimeSpan.FromMinutes(10),
             CancelOnTimeout = true,

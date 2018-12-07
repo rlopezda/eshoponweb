@@ -9,8 +9,8 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.0-unstable0003")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.0-unstable0003")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.0-unstable0005")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.0-unstable0005")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.2.0.0")]
