@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "ApplicationCore/0.2.0-unstable0002": {
+      "ApplicationCore/0.2.0-unstable0003": {
         "dependencies": {
           "Ardalis.GuardClauses": "1.2.3",
           "NETStandard.Library": "2.0.3",
@@ -141,7 +141,7 @@
     }
   },
   "libraries": {
-    "ApplicationCore/0.2.0-unstable0002": {
+    "ApplicationCore/0.2.0-unstable0003": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

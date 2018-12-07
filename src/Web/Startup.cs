@@ -127,7 +127,12 @@ namespace Microsoft.eShopWeb.Web
             app.UseStaticFiles();
             app.UseAuthentication();
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Catalog}/{action=Index}");
+            });
         }
 
         private void ListAllRegisteredServices(IApplicationBuilder app)

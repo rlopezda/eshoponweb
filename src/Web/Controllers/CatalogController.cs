@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.eShopWeb.Web.Controllers
 {
-    [Route("")]
+    [Route("Catalog")]
     public class CatalogController : Controller
     {
         private readonly ICatalogService _catalogService;
@@ -13,6 +13,7 @@ namespace Microsoft.eShopWeb.Web.Controllers
 
         [HttpGet]
         [HttpPost]
+        [Route("Index")]
         public async Task<IActionResult> Index(int? brandFilterApplied, int? typesFilterApplied, int? page)
         {
             var itemsPage = 10;           

@@ -14,7 +14,7 @@
 
 
 var target = Argument("target", "Default");
-var productName = Argument<string>("productName", "eShopOnWeb");
+var productName = Argument<string>("productName", "eShopOnWeb"); //Has to be the same in .Net, Bamboo and Octopus, or use different variables for each case.
 //var deployRoot = Argument<string>("deployRoot",  MakeAbsolute(Directory("../deploy/product")).FullPath);
 var outputPath = Argument<string>("outputPath", MakeAbsolute(Directory("./output")).FullPath);
 var configuration = Argument("configuration","Release");
@@ -36,10 +36,15 @@ var unitTests = File($"{solutionRoot}/tests/UnitTests/UnitTests.csproj");
 var outputBuildPath = Directory(outputPath) + Directory("build");
 var testResultFileName = $"{productName}_TestResult_{DateTime.UtcNow:dd-MM-yyyy-HH-mm-ss-FFF}.xml";
 var testCoverageFileName = $"{productName}_TestCoverageResults_{DateTime.UtcNow:dd-MM-yyyy-HH-mm-ss-FFF}.xml";
-var packageName = "eShopOnWeb.";
 
+//Here the vars to deploy in Octopus
+var packageName = "eShopOnWeb";
 var octopusServer = Argument<string>("octopusServer", "http://localhost:8089/");
-var octopusApiKey = Argument<string>("octopusApiKey", "API-G1XM25FQDD5YOX3FZLHHA1PO26S"); //EnvironmentVariable("bamboo_octopus_api_password")""); //have to contain 'password' to hide them in Bamboo
+var octopusApiKey = Argument<string>("octopusApiKey", "API-G1XM25FQDD5YOX3FZLHHA1PO26S"); //shoud be in EnvironmentVariable("bamboo_octopus_api_password")""); //have to contain 'password' to hide them in Bamboo
+var lastCommit = "Using last commit";//GitLogTip(MakeAbsolute(Directory("../../")));
+var octopusProjectName = productName.Replace(".", " ");
+var deployTo = "development";
+var tenants = "ME";
 
 
 
@@ -252,7 +257,7 @@ Task("Package")
     .IsDependentOn("Publish")
     .Does(() =>
 {
-    var deployRoot = MakeAbsolute(Directory("../build/output")).FullPath; //use this one later for zipped files
+    var deployRoot = MakeAbsolute(Directory("../build/output/web")).FullPath; //use this one later for zipped files, use only the Web folder as its contains the website.
 
     foreach (var file in GetFiles($"{deployRoot}/**/*"))
     {
@@ -287,7 +292,7 @@ Task("Push")
       });
 
 });
-/*
+
 Task("Deploy")
     .Description("Create release and trigger deployment in Octopus")
     .IsDependentOn("Push")
@@ -305,7 +310,7 @@ Task("Deploy")
                     {
                         { productName, versionInfo.FullSemVer }
                     },
-            ReleaseNotes = lastCommit.Message
+            ReleaseNotes = lastCommit
         });
 
         Information("Deploying release {0} for tenants {1}. Environment: {2}", versionInfo.SemVer, tenants, deployTo);  
@@ -322,7 +327,7 @@ Task("Deploy")
 
     });
 
- */
+
 
 
 
